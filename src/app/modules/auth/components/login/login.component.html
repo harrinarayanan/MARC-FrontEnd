@@ -1,0 +1,72 @@
+<div class="loginBg">
+    <div class="container mt-50">
+        <div class="row">
+            <div class="col-6">
+                <img src="../../../../../assets/images/logo (1).png" alt="log">
+                <div class="mt-5">
+                    <h2>Welcome to Mark</h2>
+                    <p class="mark-definition">MARC Connect is an online social media platform for Mark Members only. To participate in MARC Connect, please join a local MARC chapter.
+                    </p>
+                    <button type="button" class="btn btn-primary btn-sm mt-2">Learn more</button>
+                    <div class="d-flex social-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i><i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-6">
+                <div class="login-box">
+                    <h3 class="">Login Here</h3>
+                    <small class="text-grey">This is the secure system and you need to provide login details to access the portal</small>
+                    <form class="mt-4">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="User Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+                        </div>
+                        <small class="text-danger float-left font-weight-bold p-3">Forgot Username?</small>
+                        <small class="text-danger float-right font-weight-bold p-3" data-toggle="modal" data-target="#forgotPassword">Forgot Password?</small>
+                    </form>
+                    <div class="text-center mt-3">
+                        <button type="button" class="btn btn-primary btn-lg btn-block" (click)="login()">Login</button>
+                    </div>
+                    <div class="login-footer">
+                        Copyright 2021 MARC. All rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="modal fade" id="forgotPassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title font-weight-bold" id="exampleModalLabel">Forgot Password</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body">
+                <form class="mt-auto">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="User Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email Id">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary btn-sm">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
