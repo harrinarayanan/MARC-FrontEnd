@@ -1,0 +1,110 @@
+<div class="row">
+    <div class="col-md-12">
+        <p class="heading">TYFCB<span class="chev_ron"><img src="../../../../../assets/images/chevron_right.png"></span></p>
+        <div class="position-absolute" style="right: 10px; top: -10px;">
+            <span class="mr-4">Chapter : <span class="chapterName">Stalwarts</span> </span> <span>Date :  20/06/2021</span>
+        </div>
+    </div>
+    <div class="col-md-12 main-tabs">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-submit-tab" data-toggle="pill" href="#pills-submit" role="tab" aria-controls="pills-submit" aria-selected="true">Submit TYFCB</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-review-tab" data-toggle="pill" href="#pills-review" role="tab" aria-controls="pills-review" aria-selected="false">Review TYFCB</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-submit" role="tabpanel" aria-labelledby="pills-submit-tab">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Member Name</label>
+                            <select class="form-control">
+                                <option value="1">--Select--</option>
+                                <option value="2">Name List</option>
+                                </select>
+                            <small class="form-text text-muted">Please select from dropdown or search cross chapter.</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <button class="btn btn-primary btn-sm" style="margin-top: 35px;">Choose Cross Chapter</button>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-4">
+                        <label for="l_name">For a referral in the amount of:</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fas fa-rupee-sign"></i></div>
+                            </div>
+                            <input type="number" class="form-control" id="l_name" placeholder="Always use local currency">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Business Type</label>
+                            <select class="form-control">
+                                <option value="1">--Select--</option>
+                                <option value="2">New</option>
+                                <option value="3">Repeat</option>
+                                </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="c_name">Referral Type</label>
+                            <select class="form-control">
+                                <option value="1">--Select--</option>
+                                <option value="2">Tier 1 (inside)</option>
+                                <option value="3">Tier 3 (outside)</option>
+                                <option value="4">Tier 3+</option>
+                                </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="product">Comments</label>
+                            <textarea class="form-control" rows="2" cols="100"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-primary btn-sm">Submit & New</button>
+                            <button type="button" class="btn btn-outline-primary btn-sm">Submit</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="pills-review-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="l_name">Start Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="l_name">End Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary btn-sm" style="margin-top: 35px;">Search</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -11,17 +11,27 @@ export class ContainerComponent implements OnInit {
 
   ngOnInit(): void {
     this.scroll();
+    // this.mainContentScroll();
   }
 
-  scroll(){
+  scroll() {
     $(window).scroll(function () {
       if ($(document).scrollTop() > 50) {
         $('.profile_section').addClass("fixed");
-        $('.greetings').css("color" , "red")
+        $('.greetings').css("color", "red")
       } else {
         $('.profile_section').removeClass("fixed");
-        $('.greetings').css("color" , "#fff")
+        $('.greetings').css("color", "#fff")
       }
     });
   }
+  // mainContentScroll() {
+  //   $(window).scroll(function () {
+  //     if ($(document).scrollTop() > 50) {
+  //       $('.nav_section').addClass("fixed-top");
+  //     } else {
+  //       $('.nav_section').removeClass("fixed-top");
+  //     }
+  //   });
+  // }
 }

@@ -11,6 +11,10 @@ import { ContainerComponent } from './components/container/container.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { UpdateProfileComponent } from './components/update-profile/update-profile.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { ThankyouSlipComponent } from './components/thankyou-slip/thankyou-slip.component';
+import { ReferalSlipComponent } from './components/referal-slip/referal-slip.component';
+import { OneToOneSlipsComponent } from './components/one-to-one-slips/one-to-one-slips.component';
+import { CeuSlipsComponent } from './components/ceu-slips/ceu-slips.component';
 
 
 
@@ -19,7 +23,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
     HeaderComponent,
     SidebarComponent,
     ContainerComponent,  
-    DashboardComponent, UpdateProfileComponent, HomepageComponent
+    DashboardComponent, UpdateProfileComponent, HomepageComponent, ThankyouSlipComponent, ReferalSlipComponent, OneToOneSlipsComponent, CeuSlipsComponent
   ],
   imports: [
     CommonModule,
