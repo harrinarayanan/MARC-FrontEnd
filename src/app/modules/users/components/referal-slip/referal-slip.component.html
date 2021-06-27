@@ -1,1 +1,308 @@
-<p>referal-slip works!</p>
+<div class="row">
+    <div class="col-md-12">
+        <p class="heading">Referal Slips<span class="chev_ron"><img src="../../../../../assets/images/chevron_right.png"></span></p>
+        <div class="position-absolute" style="right: 10px; top: -10px;">
+            <span class="mr-4">From : <span class="chapterName">Harri narayanan</span> </span> <span>Date :  20/06/2021</span>
+        </div>
+    </div>
+    <div class="col-md-12 main-tabs">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-submit-tab" data-toggle="pill" href="#pills-submit" role="tab" aria-controls="pills-submit" aria-selected="true">Submit Slips</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-review-tab" data-toggle="pill" href="#pills-review" role="tab" aria-controls="pills-review" aria-selected="false">Review Slips</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-track-tab" data-toggle="pill" href="#pills-track" role="tab" aria-controls="pills-track" aria-selected="false">Track Referals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-report-tab" data-toggle="pill" href="#pills-received-report" role="tab" aria-controls="pills-received-report" aria-selected="false">Received Referal Report</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-submit" role="tabpanel" aria-labelledby="pills-submit-tab">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Member Name</label>
+                            <select class="form-control">
+                                <option value="1">--Select--</option>
+                                <option value="2">Name List</option>
+                                </select>
+                            <small class="form-text text-muted">Please select from dropdown or search cross chapter.</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <button class="btn btn-primary btn-sm" style="margin-top: 35px;">Choose Cross Chapter</button>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-4">
+                        <label for="l_name">Referal</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fas fa-user"></i></div>
+                            </div>
+                            <input type="number" class="form-control" id="l_name" placeholder="Referal">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="c_name">Referral Type</label>
+                            <select class="form-control">
+                                <option value="1">--Select--</option>
+                                <option value="2">Tier 1 (inside)</option>
+                                <option value="3">Tier 3 (outside)</option>
+                                <option value="4">Tier 3+</option>
+                                </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Referral Status</label>
+                            <select class="form-control">
+                                <option value="1">--Select--</option>
+                                <option value="2">Given your card</option>
+                                <option value="3">Told them you would call</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Address</label>
+                            <textarea class="form-control" rows="2" cols="100"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Telephone</label>
+                            <input type="tel" class="form-control" id="" placeholder="Enter Telephone No">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" id="" placeholder="Enter Email">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Comments</label>
+                            <textarea class="form-control" rows="2" cols="100"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-check disabled">
+                            <!-- <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option3" disabled> -->
+                            <label class="form-check-label" for="exampleRadios">
+                             How hot is this referal?
+                            </label>
+                        </div>
+                        <div class="mt-3 pl-20">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                 1
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios3">
+                                 2
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                <label class="form-check-label" for="exampleRadios3">
+                                  3
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                <label class="form-check-label" for="exampleRadios4">
+                                 4
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+                                <label class="form-check-label" for="exampleRadios5">
+                                  5
+                                </label>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-primary btn-sm">Submit & New</button>
+                            <button type="button" class="btn btn-outline-primary btn-sm">Submit</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="pills-review-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="l_name">Start Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="l_name">End Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary btn-sm" style="margin-top: 35px;">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-track" role="tabpanel" aria-labelledby="pills-track-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="l_name">Start Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="l_name">End Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="l_name">Status</label>
+                            <select class="form-control">
+                                <option value="1">All</option>                               
+                             </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#searchResult">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-received-report" role="tabpanel" aria-labelledby="pills-report-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="l_name">Start Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="l_name">End Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary btn-sm" style="margin-top: 35px;">Search</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal animate__animated animate__backInLeft" id="searchResult" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Referal List</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="text-nowrap bg-light">
+                                    <tr>
+                                        <th width="4%">#</th>
+                                        <th width="46%">Course Title</th>
+                                        <th width="15%">Credits/Course</th>
+                                        <th width="20%">QTY Earned</th>
+                                        <th width="15%">Total Credits Earned Last Week</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>1 Hour of BNI Podcasts, Webinars, BNI SuccessNet, etc.</td>
+                                        <td>1</td>
+                                        <td><input type="text" class="form-control width50" value="0"></td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>1 Hour BNI University or In Person Learning</td>
+                                        <td>1</td>
+                                        <td><input type="text" class="form-control width50" value="0"></td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>3 Hours BNI University or In Person Learning</td>
+                                        <td>1</td>
+                                        <td><input type="text" class="form-control width50" value="0"></td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>4 Hours BNI University or In Person Learning</td>
+                                        <td>2</td>
+                                        <td><input type="text" class="form-control width50" value="0"></td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>5 Hours BNI University or In Person Learning</td>
+                                        <td>1</td>
+                                        <td><input type="text" class="form-control width50" value="0"></td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>5 Hours Reading BNI Books, BNI Convention, etc.</td>
+                                        <td>3</td>
+                                        <td><input type="text" class="form-control width50" value="0"></td>
+                                        <td>1</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

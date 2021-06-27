@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CeuSlipsComponent } from './components/ceu-slips/ceu-slips.component';
+import { ConnectionsComponent } from './components/connections/connections.component';
 import { ContainerComponent } from './components/container/container.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
@@ -41,6 +42,10 @@ const routes: Routes = [
       {
         path: 'referal-slip',
         component: ReferalSlipComponent
+      },
+      {
+        path: 'connections',
+        component: ConnectionsComponent
       }
     ]
   }

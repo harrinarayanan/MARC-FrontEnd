@@ -30,6 +30,9 @@ export class SidebarComponent implements OnInit {
   }
   referalSlip() {
     this.router.navigateByUrl('/users/referal-slip');
+  } 
+  connections() {
+    this.router.navigateByUrl('/users/connections');
   }
 
 }

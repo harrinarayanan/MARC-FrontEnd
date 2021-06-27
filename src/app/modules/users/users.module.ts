@@ -15,6 +15,7 @@ import { ThankyouSlipComponent } from './components/thankyou-slip/thankyou-slip.
 import { ReferalSlipComponent } from './components/referal-slip/referal-slip.component';
 import { OneToOneSlipsComponent } from './components/one-to-one-slips/one-to-one-slips.component';
 import { CeuSlipsComponent } from './components/ceu-slips/ceu-slips.component';
+import { ConnectionsComponent } from './components/connections/connections.component';
 
 
 
@@ -23,7 +24,7 @@ import { CeuSlipsComponent } from './components/ceu-slips/ceu-slips.component';
     HeaderComponent,
     SidebarComponent,
     ContainerComponent,  
-    DashboardComponent, UpdateProfileComponent, HomepageComponent, ThankyouSlipComponent, ReferalSlipComponent, OneToOneSlipsComponent, CeuSlipsComponent
+    DashboardComponent, UpdateProfileComponent, HomepageComponent, ThankyouSlipComponent, ReferalSlipComponent, OneToOneSlipsComponent, CeuSlipsComponent, ConnectionsComponent
   ],
   imports: [
     CommonModule,
