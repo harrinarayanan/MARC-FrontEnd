@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12 main-tabs">
+    <div class="col-md-12 main-tabs position-relative">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="pills-submit-tab" data-toggle="pill" href="#pills-submit" role="tab" aria-controls="pills-submit" aria-selected="true">Add Connection</a>
@@ -38,21 +38,24 @@
                 <a class="nav-link" id="pills-report-tab" data-toggle="pill" href="#pills-received-report" role="tab" aria-controls="pills-received-report" aria-selected="false"></a>
             </li> -->
         </ul>
-        <div class="btn-group dropleft float-right">
-            <button type="button" class="btn btn-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-bars"></i>
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#"><i class="far fa-comment-dots mr-3"></i>Send Message</a>
-                <a class="dropdown-item" href="#"><i class="fas fa-tasks mr-3"></i>Ask Testimonial</a>
-                <a class="dropdown-item" href="#"><i class="far fa-calendar mr-3"></i>Give Testimonial</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"><i class="fa fa-user mr-3"></i>View Profile</a>
+        <div class="position-absolute" style="right: 2px; top: 40px;">
+            <div class="btn dropleft">
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-bars"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#"><i class="far fa-comment-dots mr-3"></i>Send Message</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-tasks mr-3"></i>Ask Testimonial</a>
+                    <a class="dropdown-item" href="#"><i class="far fa-calendar mr-3"></i>Give Testimonial</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="fa fa-user mr-3"></i>View Profile</a>
+                </div>
             </div>
         </div>
+
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-submit" role="tabpanel" aria-labelledby="pills-submit-tab">
-                <div class="row">
+                <div class="row mt-2">
                     <div class="col-md-4">
                         <div class="suggesion-list">
                             <div class="form-group">
@@ -187,53 +190,289 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="pills-review-tab">
-                <div class="row">
+                <div class="row mt-2">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="l_name">Start Date</label>
-                            <input type="date" class="form-control">
+                            <label>Keyword</label>
+                            <input type="text" class="form-control" placeholder="Enter Keyboard">
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="l_name">End Date</label>
-                            <input type="date" class="form-control">
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Name">
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <button class="btn btn-primary btn-sm" style="margin-top: 35px;">Search</button>
+                        <div class="form-group">
+                            <label>Company</label>
+                            <input type="text" class="form-control" placeholder="Enter Company Name">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Country</label>
+                            <select type="text" class="form-control">
+                                <option value="">--Select--</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>State</label>
+                            <select type="text" class="form-control">
+                                <option value="">--Select--</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>City</label>
+                            <select type="text" class="form-control">
+                                <option value="">--Select--</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center mt-2">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-primary btn-sm">Search Members</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-3">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <tbody>
+                                    <tr class="bg-light font-weight-bold">
+                                        <th scope="row">Name</th>
+                                        <td>Chapter</td>
+                                        <td>Company</td>
+                                        <td>City</td>
+                                        <td>Industry and Classification:</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Harri</th>
+                                        <td>MARC Billionaires</td>
+                                        <td class="text-primary">Basudeo Auto Ltd</td>
+                                        <td>Ranchi, Jharkhand</td>
+                                        <td>Car & Motorcycle > Auto/Car Sales</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Harri</th>
+                                        <td>MARC Billionaires</td>
+                                        <td class="text-primary">Basudeo Auto Ltd</td>
+                                        <td>Ranchi, Jharkhand</td>
+                                        <td>Car & Motorcycle > Auto/Car Sales</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-track" role="tabpanel" aria-labelledby="pills-track-tab">
-                <div class="row">
+                <div class="row mt-2">
                     <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="l_name">Start Date</label>
-                            <input type="date" class="form-control">
+                        <div class="suggesion-list">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Inbox
+                                    <span class="badge badge-primary badge-pill">14</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Sent Request
+                                    <span class="badge badge-primary badge-pill">2</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Received Request
+                                    <span class="badge badge-primary badge-pill">1</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Unread Messages
+                                    <span class="badge badge-primary badge-pill">1</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Upcoming Events
+                                    <span class="badge badge-primary badge-pill">1</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                    <div class="col-md-8">
+                        <div class="table-responsive detail-table">
+                            <!-- <table class="table table-hover" style="border-collapse:collapse;">
+                                <thead class="bg-light">
+                                    <tr class="font-weight-bold">
+                                        <th scope="col">#</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Comments</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle text-nowrap">
+                                        <th scope="row"><i class="fa fa-arrow-right"></i></th>
+                                        <td>20/06/2021</td>
+                                        <td>Mark</td>
+                                        <td>We deal with Indian stock market NSE BSE. </td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr class="hiddenRow">
+                                        <td class="hiddenRow"></td>
+                                        <div class="accordian-body collapse p-3 id="demo1">
+                                            <div class="card card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                            </div>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa fa-arrow-right"></i></th>
+                                        <td>20/06/2021</td>
+                                        <td>Mark</td>
+                                        <td>We deal with Indian stock market NSE BSE. </td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa fa-arrow-right"></i></th>
+                                        <td>20/06/2021</td>
+                                        <td>Mark</td>
+                                        <td>We deal with Indian stock market NSE BSE. </td>
+                                        <td>Pending</td>
+                                    </tr>
 
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="l_name">End Date</label>
-                            <input type="date" class="form-control">
+                                </tbody>
+                            </table> -->
+                            <table class="table table-hover" style="border-collapse:collapse;">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Date</th>
+                                        <th>Description</th>
+                                        <th>Credit</th>
+                                        <th>Debit</th>
+                                        <th>Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr colspan="6" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                                        <td>1</td>
+                                        <td>12 Jan 2018</td>
+                                        <td>Good</td>
+                                        <td>$150.00</td>
+                                        <td> - </td>
+                                        <td>$150.00</td>
+                                    </tr>
+                                    <tr class="p">
+                                        <td colspan="6" class="hiddenRow">
+                                            <div class="accordian-body collapse p-3" id="demo1">
+                                                <p>No : <span>1</span></p>
+                                                <p>Date : <span>12 Jan 2018</span> </p>
+                                                <p>Description : <span>Good</span> </p>
+                                                <p>Credit : <span>$150.00</span> </p>
+                                                <p>Debit : <span></span></p>
+                                                <p>Balance : <span>$150.00</span></p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
+                                        <td>2</td>
+                                        <td>12 Jan 2018</td>
+                                        <td>Good</td>
+                                        <td>$11.00</td>
+                                        <td> - </td>
+                                        <td>$161.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6" class="hiddenRow">
+                                            <div id="demo2" class="accordian-body collapse p-3">
+                                                <p>No : <span>2</span></p>
+                                                <p>Date : <span>12 Jan 2018</span> </p>
+                                                <p>Description : <span>Good</span> </p>
+                                                <p>Credit : <span>$150.00</span> </p>
+                                                <p>Debit : <span></span></p>
+                                                <p>Balance : <span>$150.00</span></p>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle">
+                                        <td>3</td>
+                                        <td>12 Jan 2018</td>
+                                        <td>Good</td>
+                                        <td>$500.00</td>
+                                        <td> - </td>
+                                        <td>$661.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6" class="hiddenRow">
+                                            <div id="demo3" class="accordian-body collapse p-3">
+                                                <p>No : <span>3</span></p>
+                                                <p>Date : <span>12 Jan 2018</span> </p>
+                                                <p>Description : <span>Good</span> </p>
+                                                <p>Credit : <span>$150.00</span> </p>
+                                                <p>Debit : <span></span></p>
+                                                <p>Balance : <span>$150.00</span></p>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr data-toggle="collapse" data-target="#demo4" class="accordion-toggle">
+                                        <td>4</td>
+                                        <td>12 Jan 2018</td>
+                                        <td>Good</td>
+                                        <td>$500.00</td>
+                                        <td> - </td>
+                                        <td>$661.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6" class="hiddenRow">
+                                            <div id="demo4" class="accordian-body collapse p-3">
+                                                <p>No : <span>4</span></p>
+                                                <p>Date : <span>12 Jan 2018</span> </p>
+                                                <p>Description : <span>Good</span> </p>
+                                                <p>Credit : <span>$150.00</span> </p>
+                                                <p>Debit : <span></span></p>
+                                                <p>Balance : <span>$150.00</span></p>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr data-toggle="collapse" data-target="#demo5" class="accordion-toggle">
+                                        <td>5</td>
+                                        <td>12 Jan 2018</td>
+                                        <td>Good</td>
+                                        <td>$500.00</td>
+                                        <td> - </td>
+                                        <td>$661.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6" class="hiddenRow">
+                                            <div id="demo5" class="accordian-body collapse p-3">
+                                                <p>No : <span>5</span></p>
+                                                <p>Date : <span>12 Jan 2018</span> </p>
+                                                <p>Description : <span>Good</span> </p>
+                                                <p>Credit : <span>$150.00</span> </p>
+                                                <p>Debit : <span></span></p>
+                                                <p>Balance : <span>$150.00</span></p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="l_name">Status</label>
-                            <select class="form-control">
-                                <option value="1">All</option>                               
-                             </select>
-                        </div>
-                    </div>
-                    <div class="col-md-12 text-center">
-                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#searchResult">Search</button>
+
                     </div>
                 </div>
             </div>
+
             <!-- <div class="tab-pane fade" id="pills-received-report" role="tabpanel" aria-labelledby="pills-report-tab">
                 <div class="row">
                     <div class="col-md-4">

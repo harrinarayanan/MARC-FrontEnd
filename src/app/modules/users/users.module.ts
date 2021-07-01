@@ -16,6 +16,8 @@ import { ReferalSlipComponent } from './components/referal-slip/referal-slip.com
 import { OneToOneSlipsComponent } from './components/one-to-one-slips/one-to-one-slips.component';
 import { CeuSlipsComponent } from './components/ceu-slips/ceu-slips.component';
 import { ConnectionsComponent } from './components/connections/connections.component';
+import { OverallSearchComponent } from './components/overall-search/overall-search.component';
+import { ActionsComponent } from './components/actions/actions.component';
 
 
 
@@ -24,7 +26,7 @@ import { ConnectionsComponent } from './components/connections/connections.compo
     HeaderComponent,
     SidebarComponent,
     ContainerComponent,  
-    DashboardComponent, UpdateProfileComponent, HomepageComponent, ThankyouSlipComponent, ReferalSlipComponent, OneToOneSlipsComponent, CeuSlipsComponent, ConnectionsComponent
+    DashboardComponent, UpdateProfileComponent, HomepageComponent, ThankyouSlipComponent, ReferalSlipComponent, OneToOneSlipsComponent, CeuSlipsComponent, ConnectionsComponent, OverallSearchComponent, ActionsComponent
   ],
   imports: [
     CommonModule,
