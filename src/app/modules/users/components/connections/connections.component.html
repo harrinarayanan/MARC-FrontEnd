@@ -279,14 +279,14 @@
             </div>
             <div class="tab-pane fade" id="pills-track" role="tabpanel" aria-labelledby="pills-track-tab">
                 <div class="row mt-2">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="suggesion-list">
                             <ul class="list-group">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
                                     Inbox
                                     <span class="badge badge-primary badge-pill">14</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                </li> -->
+                                <li class="list-group-item active d-flex justify-content-between align-items-center">
                                     Sent Request
                                     <span class="badge badge-primary badge-pill">2</span>
                                 </li>
@@ -298,14 +298,14 @@
                                     Unread Messages
                                     <span class="badge badge-primary badge-pill">1</span>
                                 </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
                                     Upcoming Events
                                     <span class="badge badge-primary badge-pill">1</span>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <div class="table-responsive detail-table">
                             <!-- <table class="table table-hover" style="border-collapse:collapse;">
                                 <thead class="bg-light">
@@ -350,121 +350,42 @@
 
                                 </tbody>
                             </table> -->
-                            <table class="table table-hover" style="border-collapse:collapse;">
+                            <table class="table" style="border-collapse:collapse;">
                                 <thead>
-                                    <tr>
-                                        <th>No.</th>
+                                    <tr class="bg-light">
+                                        <th></th>
                                         <th>Date</th>
-                                        <th>Description</th>
-                                        <th>Credit</th>
-                                        <th>Debit</th>
-                                        <th>Balance</th>
+                                        <th>From</th>
+                                        <th>Comments</th>
+                                        <!-- <th>Visibility</th> -->
+                                        <th>#</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr colspan="6" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-                                        <td>1</td>
-                                        <td>12 Jan 2018</td>
-                                        <td>Good</td>
-                                        <td>$150.00</td>
-                                        <td> - </td>
-                                        <td>$150.00</td>
+                                        <td><i class="fa fa-chevron-circle-right"></i></td>
+                                        <td>16/07/21</td>
+                                        <td>rockzzzzprem@gmail.com</td>
+                                        <td>Marc connection request</td>
+                                        <!-- <td><i class="far fa-check-circle"></i></td> -->
+                                        <td>
+                                            <div class="d-flex">
+                                                <button class="btn btn-outline-success btn-sm"><i class="fas fa-check"></i></button>&nbsp;
+                                                <button class="btn btn-outline-danger btn-sm"><i class="fas fa-times"></i></button>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr class="p">
                                         <td colspan="6" class="hiddenRow">
                                             <div class="accordian-body collapse p-3" id="demo1">
-                                                <p>No : <span>1</span></p>
-                                                <p>Date : <span>12 Jan 2018</span> </p>
-                                                <p>Description : <span>Good</span> </p>
-                                                <p>Credit : <span>$150.00</span> </p>
-                                                <p>Debit : <span></span></p>
-                                                <p>Balance : <span>$150.00</span></p>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
-                                        <td>2</td>
-                                        <td>12 Jan 2018</td>
-                                        <td>Good</td>
-                                        <td>$11.00</td>
-                                        <td> - </td>
-                                        <td>$161.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="6" class="hiddenRow">
-                                            <div id="demo2" class="accordian-body collapse p-3">
-                                                <p>No : <span>2</span></p>
-                                                <p>Date : <span>12 Jan 2018</span> </p>
-                                                <p>Description : <span>Good</span> </p>
-                                                <p>Credit : <span>$150.00</span> </p>
-                                                <p>Debit : <span></span></p>
-                                                <p>Balance : <span>$150.00</span></p>
+                                                <p>From : <span>1</span></p>
+                                                <p>Date : <span>12 Jan 2018 09:35AM</span> </p>
+                                                <p>Description : <span>Details</span> </p>
+                                                <p>Status : <span>Seen &nbsp;<i class="far fa-check-circle"></i></span> </p>
                                             </div>
                                         </td>
                                     </tr>
 
-                                    <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle">
-                                        <td>3</td>
-                                        <td>12 Jan 2018</td>
-                                        <td>Good</td>
-                                        <td>$500.00</td>
-                                        <td> - </td>
-                                        <td>$661.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="6" class="hiddenRow">
-                                            <div id="demo3" class="accordian-body collapse p-3">
-                                                <p>No : <span>3</span></p>
-                                                <p>Date : <span>12 Jan 2018</span> </p>
-                                                <p>Description : <span>Good</span> </p>
-                                                <p>Credit : <span>$150.00</span> </p>
-                                                <p>Debit : <span></span></p>
-                                                <p>Balance : <span>$150.00</span></p>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr data-toggle="collapse" data-target="#demo4" class="accordion-toggle">
-                                        <td>4</td>
-                                        <td>12 Jan 2018</td>
-                                        <td>Good</td>
-                                        <td>$500.00</td>
-                                        <td> - </td>
-                                        <td>$661.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="6" class="hiddenRow">
-                                            <div id="demo4" class="accordian-body collapse p-3">
-                                                <p>No : <span>4</span></p>
-                                                <p>Date : <span>12 Jan 2018</span> </p>
-                                                <p>Description : <span>Good</span> </p>
-                                                <p>Credit : <span>$150.00</span> </p>
-                                                <p>Debit : <span></span></p>
-                                                <p>Balance : <span>$150.00</span></p>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr data-toggle="collapse" data-target="#demo5" class="accordion-toggle">
-                                        <td>5</td>
-                                        <td>12 Jan 2018</td>
-                                        <td>Good</td>
-                                        <td>$500.00</td>
-                                        <td> - </td>
-                                        <td>$661.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="6" class="hiddenRow">
-                                            <div id="demo5" class="accordian-body collapse p-3">
-                                                <p>No : <span>5</span></p>
-                                                <p>Date : <span>12 Jan 2018</span> </p>
-                                                <p>Description : <span>Good</span> </p>
-                                                <p>Credit : <span>$150.00</span> </p>
-                                                <p>Debit : <span></span></p>
-                                                <p>Balance : <span>$150.00</span></p>
-                                            </div>
-                                        </td>
-                                    </tr>
                                 </tbody>
                             </table>
                         </div>
